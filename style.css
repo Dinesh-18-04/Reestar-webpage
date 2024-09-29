@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    box-shadow: 0 0 2px 4px rgba(0, 0, 0, 0.212);
+    width: 100%;
+}
+
+.nav__logo{
+    font-family: "Pirata One", system-ui;
+}
+
+.nav__info ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-weight: 800;
+}
+
+.nav__info ul li a{
+    color: black;
+}
+
+.nav__info ul li a:hover{
+    color: orange;
+}
+
+.bg-img{
+    margin: 30px 200px;
+    background-image: url("food.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+.bg-img__content{
+    color: white;
+    width: 220px;
+    text-align: left;
+    padding: 80px 0 0 70px;
+    line-height: 50px;
+}
+
+.bg-img__content button{
+    background-color: rgb(255, 0, 221);
+    border-radius: 25px;
+    color: white;
+    padding: 7px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.bg-img__content button:hover{
+    background-color: greenyellow;
+    color: black;
+    cursor: pointer;
+}
+
+.container{
+    padding: 0 200px;
+}
+
+.container__topic{
+    padding: 0 0 20px 0;
+}
+
+.container__receipe{
+    display: inline-block;
+    padding: 9px;
+    width: fit-content;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+.container__receipe:hover{
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.229);
+}
+
+.container__receipe img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 8px;
+    border-radius: 25px;
+}
+
+.container__receipe .rate p{
+    font-weight: 800;
+    padding: 0 0 10px 5px
+}
+
+.rate{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px 0 0;
+}
+
+.segment{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.orderr{
+    background-color: chocolate;
+    margin-left: 10px;
+    padding: 4px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.orderr:hover{
+    background-color: rgba(108, 50, 9, 0.983);
+
+}
+
+.footer{
+    padding: 10px 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.199) inset;
+    line-height: 20px;
+}
+.footer input{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.footer table td{
+padding-right: 10px;
+}
+
+.footer button{
+    background-color: chocolate;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+}
+
+@media only screen and (max-width: 835px)
+{
+    .segment{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    .container{
+        padding: 0 100px;
+    }
+
+    .bg-img{
+        margin: 30px 100px;
+        background-image: url("food.jpg");
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+}
+
+@media only screen and (max-width: 430px)
+{
+    .segment{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .nav__info{
+        display: none;
+    }
+
+    .container{
+        padding: 0 50px;
+    }
+    .bg-img{
+        margin: 30px 50px;
+        background-image: url("food.jpg");
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+    }
+    .bg-img__content{
+        color: white;
+        width: 220px;
+        text-align: left;
+        padding: 150px 0 0 30px;
+        line-height: 50px;
+        font-size: small;
+    }
+    .bg-img__content button{
+        background-color: rgb(255, 0, 221);
+        border-radius: 25px;
+        color: white;
+        padding: 4px;
+        width: 150px;
+        font-size: x-small;
+        cursor: pointer;
+    }
+}
